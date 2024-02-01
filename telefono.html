@@ -3,537 +3,485 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mi Página Web</title>
+    <title>Lista Animes</title>
     <link rel="stylesheet" href="telefono.css">
+    <link rel="icon" href="../Lista-Animes-Telefono/img/logo.webp">
 </head>
 <body>
     <header>
         <a href="telefono.html" style="color:white; text-decoration:none; margin-left:0px;"><h1>Anime List</h1></a>
-        <button class="boton" style="left:80px;" onclick="toggleMenu()"><img src="../img/menu.png" style="width:40px;height:40px;"></button>
+        <button class="boton" style="left:25px;" onclick="toggleMenu()"><img src="../img/menu.png" style="width:40px;height:40px;"></button>
     </header>
 
 
      <!-- Overlay para el menú -->
-     <section id="menu-overlay">
+     <section id="menu-overlay" style="background-image: url('../Lista-Animes-Telefono/img/fondo3.webp'); background-size: cover;">
         <div id="menu-buttons">
            
             <!-- Agrega más botones según sea necesario -->
         </div>
     </section>
 
-    <section id="menu" style="display: none;">
+  <section id="menu" style="display: none; left:185px; top:536px;">
         <button onclick="mostrarSeccion('seccion1')">Anime</button>
         <button onclick="mostrarSeccion('seccion2')">Leer Manga</button>
         <button onclick="toggleMenu()">Volver al Menú</button>
     </section>
     
-
-    <section id="bienvenidoSeccion" style="background-image: url('../img/fondo2.png'); background-size: cover;">   
+    <section id="bienvenidoSeccion" style="background-image: url('../Lista-Animes-Telefono/img/fondo3.webp'); background-size: cover;">   
     </section>
 
-    <section id="seccion1" style="display: none;"><!-- ANIMES -->
-        <div class="galeria">
+    <section id="seccion1" style="display: none; margin-bottom: 40px; background-color: #00000000;"><!-- ANIMES -->
+        <div class="contenedor-tarjetas">
+
             <div class="tarjeta">
                 <div class="contenedor-tarjeta">
-                    <div class="imagen"><img src="../img/another.webp" alt="Imagen 1"></div>
+                    <div class="imagen"><img src="../Lista-Animes-Telefono/img/another.webp" alt="Imagen 1"></div>
                     <div class="detalles">
                         <h3>Another</h3>
                         <p>Género: Acción</p>
                         <p>Calificación: 9.0</p>
                     </div>
                 </div>
-            </div>
             <div class="tarjeta">
                 <div class="contenedor-tarjeta">
-                    <div class="imagen"><img src="../img/Asesination Classroom.webp" alt="Imagen 2"></div>
+                    <div class="imagen"><img src="../Lista-Animes-Telefono/img/Asesination Classroom.webp" alt="Imagen 2"></div>
                     <div class="detalles">
                         <h3>Asesination Classroom</h3>
                         <p>Género: Aventura</p>
                         <p>Calificación: 8.5</p>
-                    </div>
                 </div>
             </div>
             <div class="tarjeta">
                 <div class="contenedor-tarjeta">
-                    <div class="imagen"><img src="../img/aonoexorcist.webp" alt="Imagen 2"></div>
+                    <div class="imagen"><img src="../Lista-Animes-Telefono/img/aonoexorcist.webp" alt="Imagen 2"></div>
                     <div class="detalles">
                         <h3>Ao no Exorcist</h3>
                         <p>Género: Aventura</p>
                         <p>Calificación: 8.5</p>
-                    </div>
                 </div>
             </div>
             <div class="tarjeta">
                 <div class="contenedor-tarjeta">
-                    <div class="imagen"><img src="../img/baki.webp" alt="Imagen 2"></div>
+                    <div class="imagen"><img src="../Lista-Animes-Telefono/img/baki.webp" alt="Imagen 2"></div>
                     <div class="detalles">
                         <h3>Baki</h3>
                         <p>Género: Aventura</p>
                         <p>Calificación: 8.5</p>
                     </div>
-                </div>
             </div>
             <div class="tarjeta">
                 <div class="contenedor-tarjeta">
-                    <div class="imagen"><img src="../img/black bullet.webp" alt="Imagen 2"></div>
+                    <div class="imagen"><img src="../Lista-Animes-Telefono/img/black bullet.webp" alt="Imagen 2"></div>
                     <div class="detalles">
                         <h3>Black Bullet</h3>
                         <p>Género: Aventura</p>
                         <p>Calificación: 8.5</p>
-                    </div>
                 </div>
             </div>
             <div class="tarjeta">
                 <div class="contenedor-tarjeta">
-                    <div class="imagen"><img src="../img/Boku no Hero.webp" alt="Imagen 3"></div>
+                    <div class="imagen"><img src="../Lista-Animes-Telefono/img/boku-no-hero.webp" alt="Imagen 2"></div>
                     <div class="detalles">
                         <h3>Boku no Hero</h3>
                         <p>Género: Comedia</p>
                         <p>Calificación: 7.8</p>
                     </div>
-                </div>
             </div>
             <div class="contenedor-tarjeta">
-                <div class="imagen"><img src="../img/blue lock.webp" alt="Imagen 1"></div>
+                <div class="imagen"><img src="../Lista-Animes-Telefono/img/blue lock.webp" alt="Imagen 2"></div>
                 <div class="detalles">
                     <h3>Blue Lock</h3>
                     <p>Género: Acción</p>
                     <p>Calificación: 9.0</p>
                 </div>
-            </div>
         </div>
         <div class="tarjeta">
             <div class="contenedor-tarjeta">
-                <div class="imagen"><img src="../img/boruto.webp" alt="Imagen 2"></div>
+                <div class="imagen"><img src="../Lista-Animes-Telefono/img/boruto.webp" alt="Imagen 2"></div>
                 <div class="detalles">
                     <h3>Boruto</h3>
                     <p>Género: Aventura</p>
                     <p>Calificación: 8.5</p>
                 </div>
-            </div>
         </div>
         <div class="tarjeta">
             <div class="contenedor-tarjeta">
-                <div class="imagen"><img src="../img/BunnyGirlSenpai.webp" alt="Imagen 2"></div>
+                <div class="imagen"><img src="../Lista-Animes-Telefono/img/BunnyGirlSenpai.webp" alt="Imagen 2"></div>
                 <div class="detalles">
                     <h3>Bunny Girl Senpai</h3>
                     <p>Género: Aventura</p>
                     <p>Calificación: 8.5</p>
                 </div>
             </div>
-        </div>
         <div class="tarjeta">
             <div class="contenedor-tarjeta">
-                <div class="imagen"><img src="../img/chainsawman.webp" alt="Imagen 2"></div>
+                <div class="imagen"><img src="../Lista-Animes-Telefono/img/chainsawman.webp" alt="Imagen 2"></div>
                 <div class="detalles">
                     <h3>Chainsaw Man</h3>
                     <p>Género: Aventura</p>
                     <p>Calificación: 8.5</p>
                 </div>
             </div>
-        </div>
         <div class="contenedor-tarjeta">
-            <div class="imagen"><img src="../img/Classroom of the Elite.webp" alt="Imagen 1"></div>
+            <div class="imagen"><img src="../Lista-Animes-Telefono/img/classroom-of-the-elite.webp" alt="Imagen 1"></div>
             <div class="detalles">
                 <h3>Classroom of the Elite</h3>
                 <p>Género: Acción</p>
                 <p>Calificación: 9.0</p>
             </div>
-        </div>
     </div>
     <div class="tarjeta">
         <div class="contenedor-tarjeta">
-            <div class="imagen"><img src="../img/darling in the franxx.webp" alt="Imagen 2"></div>
+            <div class="imagen"><img src="../Lista-Animes-Telefono/img/darling in the franxx.webp" alt="Imagen 2"></div>
             <div class="detalles">
                 <h3>Darling in the Franxx</h3>
                 <p>Género: Aventura</p>
                 <p>Calificación: 8.5</p>
             </div>
-        </div>
     </div>
     <div class="tarjeta">
         <div class="contenedor-tarjeta">
-            <div class="imagen"><img src="../img/Death-Note.webp" alt="Imagen 2"></div>
+            <div class="imagen"><img src="../Lista-Animes-Telefono/img/Death-Note.webp" alt="Imagen 2"></div>
             <div class="detalles">
                 <h3>Death Note</h3>
                 <p>Género: Aventura</p>
                 <p>Calificación: 8.5</p>
-            </div>
         </div>
     </div>
     <div class="contenedor-tarjeta">
-        <div class="imagen"><img src="../img/Digimon.webp" alt="Imagen 1"></div>
+        <div class="imagen"><img src="../Lista-Animes-Telefono/img/Digimon.webp" alt="Imagen 2"></div>
         <div class="detalles">
             <h3>Digimon</h3>
             <p>Género: Acción</p>
             <p>Calificación: 9.0</p>
         </div>
-    </div>
 </div>
 <div class="tarjeta">
     <div class="contenedor-tarjeta">
-        <div class="imagen"><img src="../img/dr.stone.webp" alt="Imagen 2"></div>
+        <div class="imagen"><img src="../Lista-Animes-Telefono/img/dr.stone.webp" alt="Imagen 2"></div>
         <div class="detalles">
             <h3>Dr. Stone</h3>
             <p>Género: Aventura</p>
             <p>Calificación: 8.5</p>
-        </div>
     </div>
 </div>
 <div class="tarjeta">
     <div class="contenedor-tarjeta">
-        <div class="imagen"><img src="../img/dragon ball gt.webp" alt="Imagen 2"></div>
+        <div class="imagen"><img src="../Lista-Animes-Telefono/img/dragon ball gt.webp" alt="Imagen 2"></div>
         <div class="detalles">
             <h3>Dragon Ball GT</h3>
             <p>Género: Aventura</p>
             <p>Calificación: 8.5</p>
-        </div>
     </div>
 </div>
 <div class="tarjeta">
     <div class="contenedor-tarjeta">
-        <div class="imagen"><img src="../img/dragon-ball-super.webp" alt="Imagen 2"></div>
+        <div class="imagen"><img src="../Lista-Animes-Telefono/img/dragon-ball-super.webp" alt="Imagen 2"></div>
         <div class="detalles">
             <h3>Dragon Ball Super</h3>
             <p>Género: Aventura</p>
             <p>Calificación: 8.5</p>
         </div>
-    </div>
 </div>
 <div class="tarjeta">
     <div class="contenedor-tarjeta">
-        <div class="imagen"><img src="../img/dragon-ball-z.webp" alt="Imagen 2"></div>
+        <div class="imagen"><img src="../Lista-Animes-Telefono/img/dragon-ball-z.webp" alt="Imagen 2"></div>
         <div class="detalles">
             <h3>Dragon Ball Z</h3>
             <p>Género: Aventura</p>
             <p>Calificación: 8.5</p>
         </div>
-    </div>
 </div>
 <div class="tarjeta">
     <div class="contenedor-tarjeta">
-        <div class="imagen"><img src="../img/dragon-ball-z-kai.webp" alt="Imagen 2"></div>
+        <div class="imagen"><img src="../Lista-Animes-Telefono/img/dragon-ball-z-kai.webp" alt="Imagen 2"></div>
         <div class="detalles">
             <h3>Dragon Ball Z Kai</h3>
             <p>Género: Aventura</p>
             <p>Calificación: 8.5</p>
-        </div>
     </div>
 </div>
 <div class="tarjeta">
     <div class="contenedor-tarjeta">
-        <div class="imagen"><img src="../img/Elfien Lied.webp" alt="Imagen 2"></div>
+        <div class="imagen"><img src="../Lista-Animes-Telefono/img/Elfien Lied.webp" alt="Imagen 2"></div>
         <div class="detalles">
             <h3>Elfien Lied</h3>
             <p>Género: Gore</p>
             <p>Calificación: 8.5</p>
-        </div>
     </div>
 </div>
 <div class="tarjeta">
     <div class="contenedor-tarjeta">
-        <div class="imagen"><img src="../img/fire-force.webp" alt="Imagen 2"></div>
+        <div class="imagen"><img src="../Lista-Animes-Telefono/img/fire-force.webp" alt="Imagen 2"></div>
         <div class="detalles">
             <h3>Fire Force</h3>
             <p>Género: Aventura</p>
             <p>Calificación: 8.5</p>
         </div>
-    </div>
 </div>
 <div class="tarjeta">
     <div class="contenedor-tarjeta">
-        <div class="imagen"><img src="../img/Fuufu Ijou, Koibito Miman.webp" alt="Imagen 2"></div>
+        <div class="imagen"><img src="../Lista-Animes-Telefono/img/Fuufu Ijou, Koibito Miman.webp" alt="Imagen 2"></div>
         <div class="detalles">
             <h3>Fuufu Ijou, Koibito Miman</h3>
             <p>Género: Aventura</p>
             <p>Calificación: 8.5</p>
         </div>
-    </div>
 </div>
 <div class="tarjeta">
     <div class="contenedor-tarjeta">
-        <div class="imagen"><img src="../img/Genjitsu Shugi Yuusha no Oukoku Saikenki.webp" alt="Imagen 2"></div>
+        <div class="imagen"><img src="../Lista-Animes-Telefono/img/Genjitsu Shugi Yuusha no Oukoku Saikenki.webp" alt="Imagen 2"></div>
         <div class="detalles">
             <h3>Genjitsu Shugi Yuusha no Oukoku Saikenki</h3>
             <p>Género: Aventura</p>
             <p>Calificación: 8.5</p>
         </div>
     </div>
-</div>
 <div class="tarjeta">
     <div class="contenedor-tarjeta">
-        <div class="imagen"><img src="../img/Hell's Paradise.webp" alt="Imagen 2"></div>
+        <div class="imagen"><img src="../Lista-Animes-Telefono/img/Hell's Paradise.webp" alt="Imagen 2"></div>
         <div class="detalles">
             <h3>Hell's Paradise</h3>
             <p>Género: Aventura</p>
             <p>Calificación: 8.5</p>
         </div>
     </div>
-</div>
 <div class="contenedor-tarjeta">
-    <div class="imagen"><img src="../img/Jujutsu-Kaisen.webp" alt="Imagen 1"></div>
+    <div class="imagen"><img src="../Lista-Animes-Telefono/img/Jujutsu-Kaisen.webp" alt="Imagen 2"></div>
     <div class="detalles">
         <h3>Jujutsu Kaisen</h3>
         <p>Género: Acción</p>
         <p>Calificación: 9.0</p>
     </div>
 </div>
-</div>
 <div class="tarjeta">
     <div class="contenedor-tarjeta">
-        <div class="imagen"><img src="../img/Kabaneri of the Iron Fortress.webp" alt="Imagen 2"></div>
+        <div class="imagen"><img src="../Lista-Animes-Telefono/img/Kabaneri of the Iron Fortress.webp" alt="Imagen 2"></div>
         <div class="detalles">
             <h3>Kabaneri of the Iron Fortress</h3>
             <p>Género: Aventura</p>
             <p>Calificación: 8.5</p>
         </div>
-    </div>
 </div>
 <div class="contenedor-tarjeta">
-    <div class="imagen"><img src="../img/Kaguya Sama.webp" alt="Imagen 1"></div>
+    <div class="imagen"><img src="../Lista-Animes-Telefono/img/Kaguya Sama.webp" alt="Imagen 2"></div>
     <div class="detalles">
         <h3>Kaguya Sama</h3>
         <p>Género: Acción</p>
         <p>Calificación: 9.0</p>
     </div>
 </div>
-</div>
 <div class="contenedor-tarjeta">
-    <div class="imagen"><img src="../img/Kenja no Mago.webp" alt="Imagen 1"></div>
+    <div class="imagen"><img src="../Lista-Animes-Telefono/img/Kenja no Mago.webp" alt="Imagen 2"></div>
     <div class="detalles">
         <h3>Kenja no Mago</h3>
         <p>Género: Acción</p>
         <p>Calificación: 9.0</p>
     </div>
 </div>
-</div>
 <div class="contenedor-tarjeta">
-    <div class="imagen"><img src="../img/Kimetsu-no-Yaiba.webp" alt="Imagen 1"></div>
+    <div class="imagen"><img src="../Lista-Animes-Telefono/img/Kimetsu-no-Yaiba.webp" alt="Imagen 2"></div>
     <div class="detalles">
         <h3>Kimetsu no Yaiba</h3>
         <p>Género: Acción</p>
         <p>Calificación: 9.0</p>
     </div>
 </div>
-</div>
 <div class="contenedor-tarjeta">
-    <div class="imagen"><img src="../img/La-Eminencia-de-la-Sombra.webp" alt="Imagen 1"></div>
+    <div class="imagen"><img src="../Lista-Animes-Telefono/img/La-Eminencia-de-la-Sombra.webp" alt="Imagen 2"></div>
     <div class="detalles">
         <h3>La Eminencia de la Sombra</h3>
         <p>Género: Acción</p>
         <p>Calificación: 9.0</p>
-    </div>
 </div>
 </div>
 <div class="contenedor-tarjeta">
-    <div class="imagen"><img src="../img/Mushoku-Tensei.webp" alt="Imagen 1"></div>
+    <div class="imagen"><img src="../Lista-Animes-Telefono/img/Mushoku-Tensei.webp" alt="Imagen 2"></div>
     <div class="detalles">
         <h3>Mushoku Tensei</h3>
         <p>Género: Acción</p>
         <p>Calificación: 9.0</p>
     </div>
 </div>
-</div>
 <div class="contenedor-tarjeta">
-    <div class="imagen"><img src="../img/nanatsu no taizai.webp" alt="Imagen 1"></div>
+    <div class="imagen"><img src="../Lista-Animes-Telefono/img/nanatsu no taizai.webp" alt="Imagen 2"></div>
     <div class="detalles">
         <h3>Nanatsu no Taizai</h3>
         <p>Género: Acción</p>
         <p>Calificación: 9.0</p>
     </div>
 </div>
-</div>
 <div class="contenedor-tarjeta">
-    <div class="imagen"><img src="../img/naruto.webp" alt="Imagen 1"></div>
+    <div class="imagen"><img src="../Lista-Animes-Telefono/img/naruto.webp" alt="Imagen 2"></div>
     <div class="detalles">
         <h3>Naruto</h3>
         <p>Género: Acción</p>
         <p>Calificación: 9.0</p>
     </div>
 </div>
-</div>
 <div class="contenedor-tarjeta">
-    <div class="imagen"><img src="../img/naruto-shippuden.webp" alt="Imagen 1"></div>
+    <div class="imagen"><img src="../Lista-Animes-Telefono/img/naruto-shippuden.webp" alt="Imagen 2"></div>
     <div class="detalles">
         <h3>Naruto Shippuden</h3>
         <p>Género: Acción</p>
         <p>Calificación: 9.0</p>
     </div>
 </div>
-</div>
 <div class="contenedor-tarjeta">
-    <div class="imagen"><img src="../img/Noumin Kanren no Skill bakka Agetetara.webp" alt="Imagen 1"></div>
+    <div class="imagen"><img src="../Lista-Animes-Telefono/img/Noumin Kanren no Skill bakka Agetetara.webp" alt="Imagen 2"></div>
     <div class="detalles">
         <h3>Noumin Kanren no Skill bakka Agetetara</h3>
         <p>Género: Acción</p>
         <p>Calificación: 9.0</p>
     </div>
 </div>
-</div>
 <div class="contenedor-tarjeta">
-    <div class="imagen"><img src="../img/One-Piece.webp" alt="Imagen 1"></div>
+    <div class="imagen"><img src="../Lista-Animes-Telefono/img/One-Piece.webp" alt="Imagen 2"></div>
     <div class="detalles">
         <h3>One Piece</h3>
         <p>Género: Acción</p>
         <p>Calificación: 9.0</p>
-    </div>
 </div>
 </div>
 <div class="contenedor-tarjeta">
-    <div class="imagen"><img src="../img/one punch man.webp" alt="Imagen 1"></div>
+    <div class="imagen"><img src="../Lista-Animes-Telefono/img/one punch man.webp" alt="Imagen 2"></div>
     <div class="detalles">
         <h3>One Punch Man</h3>
         <p>Género: Acción</p>
         <p>Calificación: 9.0</p>
     </div>
 </div>
-</div>
 <div class="contenedor-tarjeta">
-    <div class="imagen"><img src="../img/Oshi no Ko.webp" alt="Imagen 1"></div>
+    <div class="imagen"><img src="../Lista-Animes-Telefono/img/Oshi no Ko.webp" alt="Imagen 2"></div>
     <div class="detalles">
         <h3>Oshi no Ko</h3>
         <p>Género: Acción</p>
         <p>Calificación: 9.0</p>
     </div>
 </div>
-</div>
 <div class="contenedor-tarjeta">
-    <div class="imagen"><img src="../img/Pokemon.webp" alt="Imagen 1"></div>
+    <div class="imagen"><img src="../Lista-Animes-Telefono/img/Pokemon.webp" alt="Imagen 2"></div>
     <div class="detalles">
         <h3>Pokemon</h3>
         <p>Género: Acción</p>
         <p>Calificación: 9.0</p>
     </div>
 </div>
-</div>
 <div class="contenedor-tarjeta">
-    <div class="imagen"><img src="../img/rent-a-girlfriend.webp" alt="Imagen 1"></div>
+    <div class="imagen"><img src="../Lista-Animes-Telefono/img/rent-a-girlfriend.webp" alt="Imagen 2"></div>
     <div class="detalles">
         <h3>Rent a Girlfriend</h3>
         <p>Género: Acción</p>
         <p>Calificación: 9.0</p>
     </div>
 </div>
-</div>
 <div class="contenedor-tarjeta">
-    <div class="imagen"><img src="../img/Shingeki no Kyojin.webp" alt="Imagen 1"></div>
+    <div class="imagen"><img src="../Lista-Animes-Telefono/img/Shingeki no Kyojin.webp" alt="Imagen 2"></div>
     <div class="detalles">
         <h3>Shingeki no Kyojin</h3>
         <p>Género: Acción</p>
         <p>Calificación: 9.0</p>
     </div>
 </div>
-</div>
 <div class="contenedor-tarjeta">
-    <div class="imagen"><img src="../img/Sono Bisque Doll wa Koi wo Suru.webp" alt="Imagen 1"></div>
+    <div class="imagen"><img src="../Lista-Animes-Telefono/img/Sono Bisque Doll wa Koi wo Suru.webp" alt="Imagen 2"></div>
     <div class="detalles">
         <h3>Sono Bisque Doll</h3>
         <p>Género: Acción</p>
         <p>Calificación: 9.0</p>
     </div>
 </div>
-</div>
 <div class="contenedor-tarjeta">
-    <div class="imagen"><img src="../img/Spy x Family.webp" alt="Imagen 1"></div>
+    <div class="imagen"><img src="../Lista-Animes-Telefono/img/Spy x Family.webp" alt="Imagen 2"></div>
     <div class="detalles">
         <h3>Spy x Family</h3>
         <p>Género: Acción</p>
         <p>Calificación: 9.0</p>
     </div>
 </div>
-</div>
 <div class="contenedor-tarjeta">
-    <div class="imagen"><img src="../img/Sword Art Online.webp" alt="Imagen 1"></div>
+    <div class="imagen"><img src="../Lista-Animes-Telefono/img/Sword Art Online.webp" alt="Imagen 2"></div>
     <div class="detalles">
         <h3>Sword Art Online</h3>
         <p>Género: Acción</p>
         <p>Calificación: 9.0</p>
     </div>
 </div>
-</div>
 <div class="contenedor-tarjeta">
-    <div class="imagen"><img src="../img/solo-leveling.webp" alt="Imagen 1"></div>
+    <div class="imagen"><img src="../Lista-Animes-Telefono/img/solo-leveling.webp" alt="Imagen 2"></div>
     <div class="detalles">
         <h3>Solo Leveling</h3>
         <p>Género: Acción</p>
         <p>Calificación: 9.0</p>
     </div>
 </div>
-</div>
 <div class="contenedor-tarjeta">
-    <div class="imagen"><img src="../img/The-Promised-Neverland.webp" alt="Imagen 1"></div>
+    <div class="imagen"><img src="../Lista-Animes-Telefono/img/The-Promised-Neverland.webp" alt="Imagen 2"></div>
     <div class="detalles">
         <h3>The Promised Neverland</h3>
         <p>Género: Acción</p>
         <p>Calificación: 9.0</p>
     </div>
 </div>
-</div>
 <div class="contenedor-tarjeta">
-    <div class="imagen"><img src="../img/Tokyo-Ghoul.webp" alt="Imagen 1"></div>
+    <div class="imagen"><img src="../Lista-Animes-Telefono/img/Tokyo-Ghoul.webp" alt="Imagen 2"></div>
     <div class="detalles">
         <h3>Tokyo Ghoul</h3>
         <p>Género: Acción</p>
         <p>Calificación: 9.0</p>
     </div>
 </div>
-</div>
 <div class="contenedor-tarjeta">
-    <div class="imagen"><img src="../img/Tokyo-Ghoul-RE.webp" alt="Imagen 1"></div>
+    <div class="imagen"><img src="../Lista-Animes-Telefono/img/Tokyo-Ghoul-RE.webp" alt="Imagen 2"></div>
     <div class="detalles">
         <h3>Tokyo Ghoul RE</h3>
         <p>Género: Acción</p>
         <p>Calificación: 9.0</p>
     </div>
 </div>
-</div>
 <div class="contenedor-tarjeta">
-    <div class="imagen"><img src="../img/Tomo-chan.webp" alt="Imagen 1"></div>
+    <div class="imagen"><img src="../Lista-Animes-Telefono/img/Tomo-chan.webp" alt="Imagen 2"></div>
     <div class="detalles">
         <h3>Tomo-chan</h3>
         <p>Género: Acción</p>
         <p>Calificación: 9.0</p>
     </div>
 </div>
-</div>
 <div class="contenedor-tarjeta">
-    <div class="imagen"><img src="../img/Yofukashi No Uta.webp" alt="Imagen 1"></div>
+    <div class="imagen"><img src="../Lista-Animes-Telefono/img/Yofukashi No Uta.webp" alt="Imagen 2"></div>
     <div class="detalles">
         <h3>Yofukashi no Uta</h3>
         <p>Género: Acción</p>
         <p>Calificación: 9.0</p>
     </div>
 </div>
-</div>
 <div class="contenedor-tarjeta">
-    <div class="imagen"><img src="../img/your lie in april.webp" alt="Imagen 1"></div>
+    <div class="imagen"><img src="../Lista-Animes-Telefono/img/your lie in april.webp" alt="Imagen 2"></div>
     <div class="detalles">
         <h3>Your Lie in April</h3>
         <p>Género: Acción</p>
         <p>Calificación: 9.0</p>
     </div>
 </div>
-</div>
 <div class="contenedor-tarjeta">
-    <div class="imagen"><img src="../img/Stein Gate.webp" alt="Imagen 1"></div>
+    <div class="imagen"><img src="../Lista-Animes-Telefono/img/Stein Gate.webp" alt="Imagen 2"></div>
     <div class="detalles">
         <h3>Steins Gate</h3>
         <p>Género: Acción</p>
         <p>Calificación: 9.0</p>
     </div>
 </div>
-</div>
 <div class="contenedor-tarjeta">
-    <div class="imagen"><img src="../img/Talentless Nana.webp" alt="Imagen 1"></div>
+    <div class="imagen"><img src="../Lista-Animes-Telefono/img/Talentless Nana.webp" alt="Imagen 2"></div>
     <div class="detalles">
         <h3>Talentless Nana</h3>
         <p>Género: Acción</p>
         <p>Calificación: 9.0</p>
     </div>
 </div>
-</div>
 <div class="contenedor-tarjeta">
-    <div class="imagen"><img src="../img/Zom 100.webp" alt="Imagen 1"></div>
+    <div class="imagen"><img src="../Lista-Animes-Telefono/img/Zom 100.webp" alt="Imagen 2"></div>
     <div class="detalles">
         <h3>Zom 100</h3>
         <p>Género: Acción</p>
@@ -542,22 +490,49 @@
 </div>
 </div>
             <!-- Agrega más tarjetas según sea necesario -->
-        </div>
     </section>
 
-    <section id="seccion2" style="display: none;">
-        <img id="manga-img" alt="Manga Page" style="margin-top:-7.5px;width:435px;height:550px;">
+    <section id="seccion2" style="display: none; margin-left:-10px; background-color: rgb(0, 0, 0);">
+       <!-- Modifica el ID del contenedor de carpetas -->
+<div id="folder-buttons" class="folder-buttons">
+    
+    <button class="folder-button" onclick="changeFolder('Tomo 1 Dr. Stone')">
+      <img src="../Lista-Animes-Telefono/img/mangas/portadas/senku.webp" alt="Dr. Stone">
+      <span class="folder-name">Dr. Stone</span>
+    </button>
+  
+    <button class="folder-button" onclick="changeFolder('Tomo 1 Naruto')">
+      <img src="../Lista-Animes-Telefono/img/mangas/portadas/naruto.webp" alt="Naruto">
+      <span class="folder-name">Naruto</span>
+    </button>
+  
+    <button class="folder-button" onclick="changeFolder('Tomo 1 One Piece')">
+      <img src="../Lista-Animes-Telefono/img/mangas/portadas/luffy.webp" alt="One Piece">
+      <span class="folder-name">One Piece</span>
+    </button>
 
-    <div class="button-container" style="margin-left:130px; margin-top:-15px;">
-        <button class="animated-button draw-border" onclick="changeFolder('Tomo 1 One Piece')">One Piece</button>
-        <button class="animated-button draw-border" onclick="changeFolder('Tomo 1 Naruto')">Naruto</button>
-      </div>
-      
-      <div class="button-container2" style="margin-left:75px;">
-        <button class="animated-button draw-border" onclick="previousPage()">Página Anterior</button>
-        <span id="page-number">1</span>
-        <button class="animated-button draw-border" onclick="nextPage()">Página Siguiente</button>
-      </div>
+    <button class="folder-button" onclick="changeFolder('Tomo 1 Black Clover')">
+      <img src="../Lista-Animes-Telefono/img/mangas/portadas/asta.webp" alt="Black Clover">
+      <span class="folder-name">Black Clover</span>
+    </button>
+  </div>
+  
+  <!-- Sección de visualización de páginas individuales -->
+  <div id="page-viewer" class="page-viewer">
+    <img id="manga-img" alt="Manga Page" style="width:370px; height:550px;">
+    <div class="viewer-buttons">
+      <button class="viewer-button" onclick="previousPage()">Anterior</button>
+      <div class="page-number" id="page-number" style="margin:10px; color:white;"></div>
+      <button class="viewer-button" onclick="nextPage()">Siguiente</button>
+    </div>
+    <div id="volume-selector" style="color: white;">
+      <label for="volumeSelect">Seleccionar Tomo:</label>
+      <select id="volumeSelect" onchange="changeVolume(this.value)">
+      </select>
+    </div>
+    <button class="viewer-button close-button" onclick="closeViewer()">Volver a Mangas</button>
+  </div>
+
     </section>
 
    
@@ -608,55 +583,165 @@
     
 
 
-<script>
-    // LECTOR DE MANGAS
-    var currentPage = 1;
-    var totalPages = 56; // Reemplaza esto con el número total de páginas de tu manga
-    var currentFolder = "Tomo 1 One Piece"; // Carpeta actual
-
-    function updatePageNumber() {
-      document.getElementById("page-number").innerText = " " + currentPage;
-    }
-
-    function loadImage() {
-      var imagePath = `../img/mangas/${currentFolder}/pag${currentPage}.webp`;
-
-      // Evento de carga de la imagen
-      document.getElementById("manga-img").addEventListener('load', function() {
-        console.log('Imagen cargada con éxito');
-        updatePageNumber();
-      });
-
-      // Evento de error al cargar la imagen
-      document.getElementById("manga-img").addEventListener('error', function() {
-        console.log('Error al cargar la imagen');
-      });
-
-      document.getElementById("manga-img").src = imagePath;
-    }
-
-    function nextPage() {
-      if (currentPage < totalPages) {
-        currentPage++;
+    <script>
+        var currentPage = 1;
+      var totalPages = 56; // Actualiza esto con el número total de páginas
+      var currentFolder = "Tomo 1 Dr. Stone";
+      
+      function loadImage() {
+        var imagePath = `../Lista-Animes-Telefono/img/mangas/${currentFolder}/pag${currentPage}.webp`;
+      
+        document.getElementById("manga-img").addEventListener('load', function () {
+          console.log('Imagen cargada con éxito');
+          updatePageNumber();
+      
+          // Verificar si la página actual es la última del tomo actual
+          if (currentPage === totalPages) {
+            goToNextVolume();
+          }
+        });
+      
+        document.getElementById("manga-img").addEventListener('error', function () {
+          console.log('Error al cargar la imagen');
+          showEndOfAllTomosMessage();
+          disableNavigation();
+        });
+      
+        document.getElementById("manga-img").src = imagePath;
+      }
+      
+      function showEndOfAllTomosMessage() {
+        var endOfAllTomosMessage = document.getElementById("end-of-all-tomos-message");
+        endOfAllTomosMessage.style.display = "block";
+      }
+      
+      function disableNavigation() {
+        document.getElementById("next-button").disabled = true;
+        document.getElementById("prev-button").disabled = true;
+      }
+      
+      function enableNavigation() {
+        document.getElementById("next-button").disabled = false;
+        document.getElementById("prev-button").disabled = false;
+      }
+      
+      function changeFolder(newFolder) {
+        currentFolder = newFolder;
+        currentPage = 1;
+        loadImage();
+        toggleSections(); // Mostrar la sección de visualización de páginas
+        populateVolumeSelector(); // Actualizar el menú desplegable con los tomos disponibles
+      }
+      
+      function nextPage() {
+        if (currentPage < totalPages) {
+          currentPage++;
+          loadImage();
+        }
+      }
+      
+      function previousPage() {
+        if (currentPage > 1) {
+          currentPage--;
+          loadImage();
+        }
+      }
+      
+      function updatePageNumber() {
+        document.getElementById("page-number").innerText = "" + currentPage;
+      }
+      
+      function toggleSections() {
+        document.getElementById("folder-buttons").style.display = "none";
+        document.getElementById("page-viewer").style.display = "flex";
+      }
+      
+      function closeViewer() {
+        document.getElementById("folder-buttons").style.display = "grid";
+        document.getElementById("page-viewer").style.display = "none";
+      }
+      
+      function goToNextVolume() {
+        var currentVolumeNumber = parseInt(currentFolder.match(/\d+/)[0]);
+        var nextVolumeNumber = currentVolumeNumber + 1;
+        var nextVolumeFolder = currentFolder.replace(currentVolumeNumber, nextVolumeNumber);
+      
+        if (folderExists(nextVolumeFolder)) {
+          currentFolder = nextVolumeFolder;
+          currentPage = 1;
+          loadImage();
+          populateVolumeSelector(); // Actualizar el menú desplegable con los tomos disponibles
+        } else {
+          showEndOfAllTomosMessage();
+          disableNavigation();
+        }
+      }
+      
+      function folderExists(folderName) {
+        // Implementa la lógica real para verificar la existencia de la carpeta
+        return true; // Cambia esto según tus necesidades
+      }
+      
+      function populateVolumeSelector() {
+        var volumeSelect = document.getElementById("volumeSelect");
+        volumeSelect.innerHTML = ""; // Limpiar el menú desplegable
+      
+        var volumeCount = getVolumeCount(currentFolder);
+      
+        if (volumeCount > 1) {
+          for (var i = 1; i <= volumeCount; i++) {
+            var option = document.createElement("option");
+            option.value = i;
+            option.text = "Tomo " + i;
+            volumeSelect.add(option);
+          }
+        }
+      }
+      
+      function getVolumeCount(folderPath) {
+        var mangaVolumes = {
+          'Tomo 1 Dr. Stone': 1,
+          'Tomo 1 Naruto': 1,
+          'Tomo 1 One Piece': 2,
+          'Tomo 1 Black Clover': 1
+          // Agrega más mangas según sea necesario con el número de tomos correspondiente
+        };
+      
+        return mangaVolumes[folderPath] || 0;
+      }
+      
+      function changeVolume(selectedVolume) {
+        var newFolder = currentFolder.replace(/\d+/, selectedVolume);
+        currentFolder = newFolder;
+        currentPage = 1;
         loadImage();
       }
-    }
-
-    function previousPage() {
-      if (currentPage > 1) {
-        currentPage--;
+      
+      window.onload = function () {
         loadImage();
+      };
+      
+      function closeViewer() {
+        document.getElementById("folder-buttons").style.display = "grid";
+        document.getElementById("page-viewer").style.display = "none";
+        hideEndOfAllTomosMessage(); // Agrega esta línea para ocultar el mensaje al cerrar el visor
       }
-    }
+      
+      function hideEndOfAllTomosMessage() {
+        var endOfAllTomosMessage = document.getElementById("end-of-all-tomos-message");
+        endOfAllTomosMessage.style.display = "none";
+      }
+      function showEndOfAllTomosMessage() {
+        var endOfAllTomosMessage = document.getElementById("end-of-all-tomos-message");
+        endOfAllTomosMessage.style.display = "block";
+        document.getElementById("manga-img").style.display = "none"; // Ocultar la imagen al mostrar el mensaje
+      }
+      function hideEndOfAllTomosMessage() {
+        var endOfAllTomosMessage = document.getElementById("end-of-all-tomos-message");
+        endOfAllTomosMessage.style.display = "none";
+        document.getElementById("manga-img").style.display = "block"; // Mostrar la imagen al ocultar el mensaje
+      }
+        </script>
 
-    function changeFolder(newFolder) {
-      currentFolder = newFolder;
-      currentPage = 1; // Reiniciar la página al cambiar de carpeta
-      loadImage();
-    }
-
-    // Cargar la primera imagen al cargar la página
-    window.onload = loadImage;
-</script>
 </body>
 </html>
