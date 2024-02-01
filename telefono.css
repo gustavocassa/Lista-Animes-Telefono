@@ -1,0 +1,180 @@
+body{
+    display:none;
+}
+/* Media Query para pantallas de hasta 480px de ancho (teléfonos) */
+@media only screen and (max-width: 480px) {
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        display:block;
+        width:100%;
+        height: auto;
+        overflow: hidden;  /* Deshabilita el desplazamiento del body */
+        }
+    
+    header {
+        background-color: #dddddd;
+        color: #fff;
+        padding: 10px;
+        display: flex;
+        align-items: center; /* Alinea verticalmente los elementos al centro */
+    }
+  
+
+    section {
+        padding: 20px;
+        height:83.2vh;
+        overflow-y: auto; /* Habilita el desplazamiento solo en el section */
+    }
+    section#bienvenida {
+        display: block;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+    }
+    h1{
+        padding-left:45px;
+    }
+
+    /*BARRA MENU*/
+    .boton {
+        overflow: hidden;
+        cursor: pointer;
+        border: none;
+        background: none;
+        padding: 0;
+        transition: filter 0.3s ease;
+        margin-left:300px;
+        position: fixed;
+        z-index: 999; /* Asegura que esté por encima de otros elementos en la página */
+    }
+    .boton:hover img {
+        filter: invert(100%);
+    }
+
+    /*GALERIA IMAGENES*/
+   .galeria {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 100%;
+    overflow-x: auto;
+    padding: 10px;
+}
+
+.tarjeta {
+    flex: 0 0 auto;
+}
+
+.contenedor-tarjeta {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.imagen {
+    flex: 1;
+}
+
+.imagen img {
+    width: 175px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+
+.detalles {
+    flex: 2;
+    padding: 10px;
+}
+
+.detalles h3 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.detalles p {
+    margin: 5px 0;
+}
+}
+
+
+/*MANGA*/
+#manga-container {
+    position: relative;
+    width: 100%; /* Cambiado al 100% para ocupar el ancho completo */
+    margin-top: 20px;
+}
+
+#manga-img {
+    width: 100%; /* Cambiado al 100% para ocupar el ancho completo */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin-bottom: 20px;
+    margin-left: 0; /* Eliminado el margen izquierdo */
+    margin-top: 20px;
+}
+
+#page-number {
+    padding: 5px;
+    font-size: 16px;
+    color: #333;  
+}
+
+.manga {
+    display: flex;
+    flex-direction: column; /* Cambiado a columna para una disposición más vertical en dispositivos móviles */
+    align-items: center;
+    margin-left: 0; /* Eliminado el margen izquierdo */
+}
+button {
+    padding: 7.5px;
+    margin: 5px;
+    border: none;
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color:  #2980b9;
+}
+
+  /* Estilos para el menú */
+  #menu {
+    display: none;
+    position: fixed;
+    top: 600px;
+    left:240px;
+    transform: translate(-50%, -50%);
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    z-index: 1000; /* Un valor alto para asegurar que esté en la parte superior */
+    width:100%;
+    height:cover;
+    overflow:hidden;
+    margin-top:-130px;
+}
+#menu button {
+    display: block;
+    width:70%;
+    margin-left:85px;
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: rgba(163, 130, 130, 0.171);
+    color: black;
+    font-size: 18px;
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin-top:125px;
+}
