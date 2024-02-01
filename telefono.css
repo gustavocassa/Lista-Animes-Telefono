@@ -57,6 +57,7 @@ body{
     flex: 0 0 auto;
     margin-bottom: 20px; /* Ajusta el valor según la separación deseada entre tarjetas */
     background-color: rgb(0, 0, 0);
+    color: white;
 }
 .contenedor-tarjeta {
     border: 1px solid #ccc;
