@@ -32,7 +32,7 @@ body{
   }
     section {
         padding: 20px;
-        height:85vh;
+        height:90vh;
         overflow-y: auto; /* Habilita el desplazamiento solo en el section */
         background-color: #00000000;
     }
