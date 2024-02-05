@@ -21,6 +21,7 @@ body{
         display: flex;
         align-items: center; /* Alinea verticalmente los elementos al centro */
         overflow: hidden; /* Habilita el desplazamiento solo en el section */
+        height: 62.5px;
     }
 
     section#section1{
