@@ -11,7 +11,7 @@ body{
         display:block;
         width:100%;
         height: auto;
-        overflow: hidden;  /* Deshabilita el desplazamiento del body */
+        overflow-y: hidden; /* Habilita el desplazamiento solo en el section */
         }
     
     header {
@@ -20,6 +20,7 @@ body{
         padding: 10px;
         display: flex;
         align-items: center; /* Alinea verticalmente los elementos al centro */
+        overflow: hidden; /* Habilita el desplazamiento solo en el section */
     }
   
 
@@ -37,27 +38,55 @@ body{
     }
 
     /*BARRA MENU*/
-    .boton {
-        overflow: hidden;
-        cursor: pointer;
-        border: none;
-        background: none;
-        padding: 0;
-        transition: filter 0.3s ease;
-        margin-left:300px;
-        position: fixed;
-        z-index: 999; /* Asegura que esté por encima de otros elementos en la página */
+    #nav-button {
+      cursor: pointer;
+      justify-content: center;
+      align-items: center;
+      display:flex;
     }
-    .boton:hover img {
-        filter: invert(100%);
+    
+    #nav-button span,
+    #nav-button span:after,
+    #nav-button span:before {
+      transition: all 500ms ease-in-out;
+      border-radius: 1px;
+      height: 5px;
+      width: 40px;
+      background: white;
+      position: absolute;
+      display: block;
+      content: "";
+      background: #000;
     }
-
+    
+    #nav-button span:before {
+      top: -10px;
+    }
+    #nav-button span:after {
+      bottom: -10px;
+    }
+    
+    #nav-button.active span {
+      background-color: transparent;
+    }
+    
+    #nav-button.active span:before,
+    #nav-button.active span:after {
+      top: 0;
+    }
+    
+    #nav-button.active span:after {
+      transform: rotate(-45deg);
+    }
+    
+    #nav-button.active span:before {
+      transform: rotate(45deg);
+    }
     /*GALERIA IMAGENES*/
  .tarjeta {
     flex: 0 0 auto;
     margin-bottom: 20px; /* Ajusta el valor según la separación deseada entre tarjetas */
     background-color: rgb(0, 0, 0);
-    color: white;
 }
 .contenedor-tarjeta {
     border: 1px solid #ccc;
