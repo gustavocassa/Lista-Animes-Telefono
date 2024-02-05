@@ -13,7 +13,7 @@ body{
         height: auto;
         overflow-y: hidden; /* Habilita el desplazamiento solo en el section */
         }
-    
+       
     header {
         background-color: #238AE5;
         color: #fff;
@@ -22,8 +22,13 @@ body{
         align-items: center; /* Alinea verticalmente los elementos al centro */
         overflow: hidden; /* Habilita el desplazamiento solo en el section */
     }
-  
 
+    section#section1{
+      padding: 20px;
+      height:150vh;
+      overflow-y: auto; /* Habilita el desplazamiento solo en el section */
+      background-color: #00000000;
+  }
     section {
         padding: 20px;
         height:85vh;
@@ -33,12 +38,6 @@ body{
     section#bienvenida {
         display: block;
     }
-     section#section1{
-      padding: 20px;
-      height:110vh;
-      overflow-y: auto; /* Habilita el desplazamiento solo en el section */
-      background-color: #00000000;
-  }
     h1{
         padding-left:45px;
     }
@@ -91,7 +90,6 @@ body{
     /*GALERIA IMAGENES*/
  .tarjeta {
     flex: 0 0 auto;
-    margin-bottom: 20px; /* Ajusta el valor según la separación deseada entre tarjetas */
     background-color: rgb(0, 0, 0);
 }
 .contenedor-tarjeta {
@@ -100,10 +98,11 @@ body{
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     margin-top:-10px;
     background-color: rgb(0, 0, 0);
     color: white;
+    
 }
 
 .imagen {
@@ -198,9 +197,11 @@ body{
 
   .viewer-buttons {
     display: flex;
-    justify-content: space-between;
+    margin-left:50%;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
   }
 
   .viewer-button {
@@ -213,7 +214,7 @@ body{
     display: inline-block;
     font-size: 14px;
     cursor: pointer;
-    border-radius: 8px;
+    border-radius: 20px;
     transition: background-color 0.3s;
   }
 
@@ -223,6 +224,7 @@ body{
 
   .close-button {
     background-color: #f44336;
+    padding:5px;
   }
   .folder-name {
     display: block;
