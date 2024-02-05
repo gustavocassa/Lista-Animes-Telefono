@@ -33,6 +33,12 @@ body{
     section#bienvenida {
         display: block;
     }
+     section#section1{
+      padding: 20px;
+      height:110vh;
+      overflow-y: auto; /* Habilita el desplazamiento solo en el section */
+      background-color: #00000000;
+  }
     h1{
         padding-left:45px;
     }
