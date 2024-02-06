@@ -504,13 +504,8 @@
                     </div>
                                 <!-- Agrega más tarjetas según sea necesario -->
 </div>
-<div id="contador-divs" style="margin-bottom: 30px;"></div>
+<div id="contador-divs" style="margin-bottom: 80px;"></div>
 
-<div id="FiltroContenedor" style="margin-bottom: 120px; margin-left:45px;">
-<input type="text" id="filterInput" placeholder="Anime a Filtrar" style="border-radius: 8px; ">
-<button id="filterBtn" style="background-color: #238AE5; border-radius: 8px;">Filtrar Animes</button>
-<button id="resetBtn" style="display:none;">Eliminar Filtro</button>
-</div>
 <br><br><br>
 
     </section>
@@ -775,52 +770,7 @@
    });
    
    </script>
-   <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    // Obtener todos los elementos div con la clase "contenedor-tarjetas"
-    var contenedorTarjetas = document.querySelectorAll('.contenedor-tarjeta');
-    
-    // Mostrar la cantidad total de divs con la clase "contenedor-tarjetas"
-    var contadorDivs = document.createElement('div');
-    contadorDivs.textContent = "Cantidad de Animes Vistos:" + contenedorTarjetas.length;
-    document.getElementById('contador-divs').appendChild(contadorDivs);
-});
-   </script>
-<script>
-    var filterBtn = document.getElementById('filterBtn');
-    var resetBtn = document.getElementById('resetBtn');
-    var filterInput = document.getElementById('filterInput');
-    var containers = document.getElementsByClassName('contenedor-tarjeta');
-  
-    filterBtn.addEventListener('click', function() {
-      var filterText = filterInput.value.toLowerCase();
-      for (var i = 0; i < containers.length; i++) {
-        var p = containers[i].getElementsByTagName('p')[0];
-        if (filterText !== '' && p.innerHTML.toLowerCase().indexOf(filterText) === -1) {
-          containers[i].classList.add('oculto');
-        } else {
-          containers[i].classList.remove('oculto');
-        }
-      }
-      toggleResetBtn();
-    });
-  
-    resetBtn.addEventListener('click', function() {
-      filterInput.value = '';
-      for (var i = 0; i < containers.length; i++) {
-        containers[i].classList.remove('oculto');
-      }
-      toggleResetBtn();
-    });
-  
-    function toggleResetBtn() {
-      if (filterInput.value !== '' && resetBtn.style.display === 'none') {
-        resetBtn.style.display = 'inline-block';
-      } else if (filterInput.value === '' && resetBtn.style.display !== 'none') {
-        resetBtn.style.display = 'none';
-      }
-    }
-  </script>
+ 
   
 </body>
 </html>
