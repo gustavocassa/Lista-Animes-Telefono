@@ -23,7 +23,16 @@ body{
         overflow: hidden; /* Habilita el desplazamiento solo en el section */
         height: 50px;
     }
-
+ #contador-divs {
+      background-color: #238AE5; /* Cambia el color de fondo si es necesario */
+      color:white;
+      padding: 10px;
+      width:220px;
+      margin-left:60px;
+      border: 1px solid black; /* Cambia el estilo del borde si es necesario */
+      border-radius: 8px;
+      z-index: 9999; /* Ajusta según sea necesario para asegurarte de que esté por encima de todo */
+  }
     section#section1{
       padding: 20px;
       height:150vh;
