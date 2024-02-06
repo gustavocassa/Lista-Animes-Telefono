@@ -504,7 +504,13 @@
                     </div>
                                 <!-- Agrega más tarjetas según sea necesario -->
 </div>
-<div id="contador-divs" style="margin-bottom: 90px;"></div>
+
+<div id="FiltroContenedor" style="margin-bottom: 50px;">
+<input type="text" id="filterInput" placeholder="Anime a filtrar">
+<button id="filterBtn">Filtrar Animes</button>
+<button id="resetBtn" style="display:none; margin-but" >Eliminar Filtro</button>
+</div>
+<br><br><br>
 
     </section>
 
@@ -779,5 +785,40 @@
     document.getElementById('contador-divs').appendChild(contadorDivs);
 });
    </script>
+<script>
+    var filterBtn = document.getElementById('filterBtn');
+    var resetBtn = document.getElementById('resetBtn');
+    var filterInput = document.getElementById('filterInput');
+    var containers = document.getElementsByClassName('contenedor-tarjeta');
+  
+    filterBtn.addEventListener('click', function() {
+      var filterText = filterInput.value.toLowerCase();
+      for (var i = 0; i < containers.length; i++) {
+        var p = containers[i].getElementsByTagName('p')[0];
+        if (filterText !== '' && p.innerHTML.toLowerCase().indexOf(filterText) === -1) {
+          containers[i].classList.add('oculto');
+        } else {
+          containers[i].classList.remove('oculto');
+        }
+      }
+      toggleResetBtn();
+    });
+  
+    resetBtn.addEventListener('click', function() {
+      filterInput.value = '';
+      for (var i = 0; i < containers.length; i++) {
+        containers[i].classList.remove('oculto');
+      }
+      toggleResetBtn();
+    });
+  
+    function toggleResetBtn() {
+      if (filterInput.value !== '' && resetBtn.style.display === 'none') {
+        resetBtn.style.display = 'inline-block';
+      } else if (filterInput.value === '' && resetBtn.style.display !== 'none') {
+        resetBtn.style.display = 'none';
+      }
+    }
+  </script>
 </body>
 </html>
