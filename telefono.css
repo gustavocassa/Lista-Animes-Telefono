@@ -33,6 +33,9 @@ body{
       border-radius: 8px;
       z-index: 9999; /* Ajusta según sea necesario para asegurarte de que esté por encima de todo */
   }
+#filterBtn, #resetBtn {
+    margin-bottom: 10px;
+  }
     section#section1{
       padding: 20px;
       height:150vh;
