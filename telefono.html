@@ -491,7 +491,8 @@
                                 <!-- Agrega más tarjetas según sea necesario -->
 
 </div>
-           
+           <div id="contador-divs" style="margin-bottom: 60px;"></div>
+
     </section>
 
     <section id="seccion2" style="display: none; margin-left:-10px; background-color: rgb(0, 0, 0);">
@@ -752,6 +753,17 @@
      this.classList.toggle("active");
    });
    
+   </script>
+   <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Obtener todos los elementos div con la clase "contenedor-tarjetas"
+    var contenedorTarjetas = document.querySelectorAll('.contenedor-tarjeta');
+    
+    // Mostrar la cantidad total de divs con la clase "contenedor-tarjetas"
+    var contadorDivs = document.createElement('div');
+    contadorDivs.textContent = "Cantidad de Animes Vistos:" + contenedorTarjetas.length;
+    document.getElementById('contador-divs').appendChild(contadorDivs);
+});
    </script>
 </body>
 </html>
