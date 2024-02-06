@@ -23,7 +23,7 @@ body{
         overflow: hidden; /* Habilita el desplazamiento solo en el section */
         height: 50px;
     }
- #contador-divs {
+    #contador-divs {
       background-color: #238AE5; /* Cambia el color de fondo si es necesario */
       color:white;
       padding: 10px;
@@ -33,7 +33,7 @@ body{
       border-radius: 8px;
       z-index: 9999; /* Ajusta según sea necesario para asegurarte de que esté por encima de todo */
   }
-#filterBtn, #resetBtn {
+  #filterBtn, #resetBtn {
     margin-bottom: 10px;
   }
     section#section1{
