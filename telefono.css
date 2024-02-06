@@ -100,8 +100,9 @@ body{
     #nav-button.active span:before {
       transform: rotate(45deg);
     }
-     /*GALERIA IMAGENES*/
+    /*GALERIA IMAGENES*/
  .tarjeta {
+    flex: 0 0 auto;
     background-color: rgb(0, 0, 0);
 }
 .contenedor-tarjeta {
@@ -114,9 +115,15 @@ body{
     margin-top:-10px;
     background-color: rgb(0, 0, 0);
     color: white;
+    flex: 0 0 calc(33.33% - 20px); /* Ajustar el tamaño de los contenedores */
 
 }
-
+.oculto {
+  display: none; /* Ocultar los contenedores */
+}
+.contenedor-tarjetas{
+  flex-wrap: wrap; /* Permitir el ajuste de múltiples líneas */
+}
 .imagen {
     flex: 1;
 }
