@@ -850,6 +850,14 @@
     var filterInput = document.getElementById('filterInput');
     var containers = document.getElementsByClassName('contenedor-tarjeta');
 
+    filterInput.addEventListener('focus', function() {
+      document.body.style.overflow = 'hidden';
+    });
+
+    filterInput.addEventListener('blur', function() {
+      document.body.style.overflow = '';
+    });
+
     filterBtn.addEventListener('click', function() {
       var filterText = filterInput.value.toLowerCase();
       for (var i = 0; i < containers.length; i++) {
