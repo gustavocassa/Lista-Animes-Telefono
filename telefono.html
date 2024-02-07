@@ -859,6 +859,11 @@
     });
 
     filterBtn.addEventListener('click', function() {
+      // Verificar y quitar el teclado virtual si está activo
+      if (isVirtualKeyboardActive()) {
+        toggleVirtualKeyboard();
+      }
+
       var filterText = filterInput.value.toLowerCase();
       for (var i = 0; i < containers.length; i++) {
         var p = containers[i].getElementsByTagName('p')[0];
@@ -889,8 +894,19 @@
         resetBtn.style.display = 'none';
       }
     }
-</script>
 
+    // Función para verificar si el teclado virtual está activo
+    function isVirtualKeyboardActive() {
+      return (
+        window.innerHeight !== window.outerHeight
+      );
+    }
+
+    // Función para desactivar el teclado virtual
+    function toggleVirtualKeyboard() {
+      filterInput.blur();
+    }
+</script>
     
 </body>
 </html>
