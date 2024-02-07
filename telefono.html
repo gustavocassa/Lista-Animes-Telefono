@@ -850,14 +850,6 @@
     var filterInput = document.getElementById('filterInput');
     var containers = document.getElementsByClassName('contenedor-tarjeta');
 
-    filterInput.addEventListener('focus', function() {
-      document.body.style.overflow = 'hidden';
-    });
-
-    filterInput.addEventListener('blur', function() {
-      document.body.style.overflow = '';
-    });
-
     filterBtn.addEventListener('click', function() {
       var filterText = filterInput.value.toLowerCase();
       for (var i = 0; i < containers.length; i++) {
@@ -889,6 +881,16 @@
         resetBtn.style.display = 'none';
       }
     }
+
+    // Ajustar tamaño del contenedor cuando el teclado se muestra
+    var originalHeight = window.innerHeight;
+    window.addEventListener('resize', function() {
+      if (window.innerHeight < originalHeight) {
+        document.body.style.height = originalHeight + 'px';
+      } else {
+        document.body.style.height = 'auto';
+      }
+    });
 </script>
 
     
