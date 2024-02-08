@@ -606,16 +606,16 @@
   <div id="page-viewer" class="page-viewer" style="margin-top:-10px;">
     <img id="manga-img" alt="Manga Page" style="width:370px; height:550px;">
     <div class="viewer-buttons">
-      <button class="viewer-button" onclick="previousPage()">Anterior</button>
+      <button class="viewer-button" onclick="previousPage()" style="background-color: #026103;">Anterior</button>
       <div class="page-number" id="page-number" style="margin:10px; color:white;"></div>
-      <button class="viewer-button" onclick="nextPage()">Siguiente</button>
+      <button class="viewer-button" onclick="nextPage()" style="background-color: #026103;">Siguiente</button>
     </div>
     <div id="volume-selector" style="color: white; margin-bottom: 5px;">
       <label for="volumeSelect">Seleccionar Tomo:</label>
-      <select id="volumeSelect" onchange="changeVolume(this.value)">
+      <select id="volumeSelect" onchange="changeVolume(this.value)" style="background-color: #3C3C3C;">
       </select>
     </div>
-    <button class="viewer-button close-button" onclick="closeViewer()">Volver a Mangas</button>
+    <button class="viewer-button close-button" onclick="closeViewer()" style="background-color: #BA0300;">Volver a Mangas</button>
   </div>
 
     </section>
