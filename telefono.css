@@ -55,7 +55,9 @@ body{
     h1{
         padding-left:45px;
     }
-
+    h3{
+      color:rgba(255, 0, 0, 0.671);
+    }
     /*BARRA MENU*/
     #nav-button {
       cursor: pointer;
