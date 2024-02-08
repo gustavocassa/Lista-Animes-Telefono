@@ -77,7 +77,7 @@ body{
       position: absolute;
       display: block;
       content: "";
-      background: #000;
+      background: white; /*COLOR DE MENU*/
     }
     
     #nav-button span:before {
