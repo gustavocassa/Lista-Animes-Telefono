@@ -257,7 +257,8 @@ body{
 
 
 /*MENU DE FILTROS*/
- /* Estilos para el botón fijo */
+
+    /* Estilos para el botón fijo */
     .fixed-button {
       position: fixed;
       bottom: 20px;
@@ -300,37 +301,45 @@ body{
       border-radius: 10px;
       max-width: 80%;
     }
- /* Estilos para el botón de filtro */
- #filterBtn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1000; /* Para asegurar que esté encima de otros elementos */
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  font-size: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-/* Estilos para el menú */
-#filterMenu {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 999; /* Para asegurar que esté encima del botón */
-  background-color: rgba(255, 255, 255, 0.5); /* Fondo transparente con 50% de opacidad */
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  display: none; /* Ocultamos inicialmente el menú */
-}
+  /* Estilos para el botón de filtro */
+  #filterBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; /* Para asegurar que esté encima de otros elementos */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  /* Estilo para la imagen dentro del botón */
+  #filterBtn img {
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+  }
+
+  /* Estilos para el menú */
+  #filterMenu {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999; /* Para asegurar que esté encima del botón */
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo transparente con 50% de opacidad */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    display: none; /* Ocultamos inicialmente el menú */
+  }
 
   /* Estilos adicionales para el menú */
   #filterMenu input,
@@ -359,4 +368,3 @@ body{
     cursor: pointer;
     display: none; /* Ocultar inicialmente el botón de reset */
   }
-  
