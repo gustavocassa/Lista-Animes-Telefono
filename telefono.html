@@ -556,7 +556,7 @@
 <div id="contador-divs" style="margin-bottom: 30px; background-color: #01237D;"></div>
                     
  <!-- Botón de filtro -->
- <button id="filterBtn">&#9776;</button>
+ <button id="filterBtn"><img src="../img/filtrar.png" style="width:30px;height: 30px; margin-top:5px;   pointer-events: none;" ></button>
 
  <!-- Menú de filtro -->
  <div id="filterMenu">
@@ -564,6 +564,8 @@
    <button id="applyFilterBtn">Aplicar Filtro</button>
    <button id="resetFilterBtn">Resetear Filtro</button>
  </div>
+
+
 
 <br><br><br>
 
@@ -845,19 +847,16 @@
     var filterInput = document.getElementById('filterInput');
     var containers = document.getElementsByClassName('contenedor-tarjeta');
 
-    // Mostrar u ocultar menú al hacer clic en el botón de filtro
     filterBtn.addEventListener('click', function() {
       filterMenu.style.display = filterMenu.style.display === 'block' ? 'none' : 'block';
     });
 
-    // Cerrar menú si se hace clic fuera de él
     document.addEventListener('click', function(event) {
       if (!filterMenu.contains(event.target) && event.target !== filterBtn) {
         filterMenu.style.display = 'none';
       }
     });
 
-    // Aplicar filtro al hacer clic en el botón "Aplicar Filtro"
     applyFilterBtn.addEventListener('click', function() {
       var filterText = filterInput.value.toLowerCase();
       for (var i = 0; i < containers.length; i++) {
@@ -872,23 +871,34 @@
         }
       }
       toggleResetBtn();
-      filterMenu.style.display = 'none'; // Ocultar el menú después de aplicar el filtro
+      filterMenu.style.display = 'none';
     });
 
-    // Resetear filtro al hacer clic en el botón "Resetear Filtro"
     resetFilterBtn.addEventListener('click', function() {
       filterInput.value = '';
       for (var i = 0; i < containers.length; i++) {
         containers[i].classList.remove('oculto');
       }
       toggleResetBtn();
-      filterMenu.style.display = 'none'; // Ocultar el menú al resetear el filtro
+      filterMenu.style.display = 'none';
     });
 
-    // Función para mostrar u ocultar el botón de resetear filtro
     function toggleResetBtn() {
       resetFilterBtn.style.display = filterInput.value !== '' ? 'inline-block' : 'none';
     }
+  </script>
+    <script>
+    var filterMenu = document.getElementById('filterMenu');
+
+    function toggleFilterMenu() {
+      filterMenu.style.display = filterMenu.style.display === 'block' ? 'none' : 'block';
+    }
+
+    document.addEventListener('click', function(event) {
+      if (!filterMenu.contains(event.target) && event.target.id !== 'filterBtn') {
+        filterMenu.style.display = 'none';
+      }
+    });
   </script>
     
 </body>
