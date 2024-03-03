@@ -554,12 +554,16 @@
                                 <!-- Agrega más tarjetas según sea necesario -->
 </div>
 <div id="contador-divs" style="margin-bottom: 30px; background-color: #01237D;"></div>
+                    
+ <!-- Botón de filtro -->
+ <button id="filterBtn">&#9776;</button>
 
-<div id="FiltroContenedor" style="margin-bottom: 120px; margin-left:px;">
-<input type="text" id="filterInput" placeholder="Anime a Filtrar" style="border-radius: 8px; background-color: rgba(128, 128, 128, 0.09); color:white;">
-<button id="filterBtn" style="background-color: #1a41ad; border-radius: 8px;">Filtrar Animes</button>
-<button id="resetBtn" onclick="resetFilter()" style="background-color: grey;">Eliminar Filtro</button>
-</div>
+ <!-- Menú de filtro -->
+ <div id="filterMenu">
+   <input type="text" id="filterInput" placeholder="Buscar...">
+   <button id="applyFilterBtn">Aplicar Filtro</button>
+   <button id="resetFilterBtn">Resetear Filtro</button>
+ </div>
 
 <br><br><br>
 
@@ -835,19 +839,26 @@
 
 <script>
     var filterBtn = document.getElementById('filterBtn');
-    var resetBtn = document.getElementById('resetBtn');
+    var filterMenu = document.getElementById('filterMenu');
+    var applyFilterBtn = document.getElementById('applyFilterBtn');
+    var resetFilterBtn = document.getElementById('resetFilterBtn');
     var filterInput = document.getElementById('filterInput');
     var containers = document.getElementsByClassName('contenedor-tarjeta');
 
-    filterInput.addEventListener('focus', function() {
-      document.body.style.overflow = 'hidden';
-    });
-
-    filterInput.addEventListener('blur', function() {
-      document.body.style.overflow = '';
-    });
-
+    // Mostrar u ocultar menú al hacer clic en el botón de filtro
     filterBtn.addEventListener('click', function() {
+      filterMenu.style.display = filterMenu.style.display === 'block' ? 'none' : 'block';
+    });
+
+    // Cerrar menú si se hace clic fuera de él
+    document.addEventListener('click', function(event) {
+      if (!filterMenu.contains(event.target) && event.target !== filterBtn) {
+        filterMenu.style.display = 'none';
+      }
+    });
+
+    // Aplicar filtro al hacer clic en el botón "Aplicar Filtro"
+    applyFilterBtn.addEventListener('click', function() {
       var filterText = filterInput.value.toLowerCase();
       for (var i = 0; i < containers.length; i++) {
         var p = containers[i].getElementsByTagName('p')[0];
@@ -861,24 +872,24 @@
         }
       }
       toggleResetBtn();
+      filterMenu.style.display = 'none'; // Ocultar el menú después de aplicar el filtro
     });
 
-    function resetFilter() {
+    // Resetear filtro al hacer clic en el botón "Resetear Filtro"
+    resetFilterBtn.addEventListener('click', function() {
       filterInput.value = '';
       for (var i = 0; i < containers.length; i++) {
         containers[i].classList.remove('oculto');
       }
       toggleResetBtn();
-    }
+      filterMenu.style.display = 'none'; // Ocultar el menú al resetear el filtro
+    });
 
+    // Función para mostrar u ocultar el botón de resetear filtro
     function toggleResetBtn() {
-      if (filterInput.value !== '' && resetBtn.style.display === 'none') {
-        resetBtn.style.display = 'inline-block';
-      } else if (filterInput.value === '' && resetBtn.style.display !== 'none') {
-        resetBtn.style.display = 'none';
-      }
+      resetFilterBtn.style.display = filterInput.value !== '' ? 'inline-block' : 'none';
     }
-</script>
+  </script>
     
 </body>
 </html>
