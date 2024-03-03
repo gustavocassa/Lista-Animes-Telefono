@@ -331,16 +331,7 @@ body{
   padding: 10px;
   display: none; /* Ocultamos inicialmente el menú */
 }
-/* Estilos para los botones del menú */
-#filterMenu button {
-  background-color: blue;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 5px 10px;
-  margin-right: 10px;
-  cursor: pointer;
-  
-}
+
   /* Estilos adicionales para el menú */
   #filterMenu input,
   #filterMenu button {
