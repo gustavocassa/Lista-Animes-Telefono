@@ -256,7 +256,7 @@ body{
   }
 
 
-/*MENU DE FILTROS*/
+  /*MENU DE FILTROS*/
 
     /* Estilos para el botón fijo */
     .fixed-button {
@@ -327,27 +327,28 @@ body{
     margin-top: 5px;
   }
 
-  /* Estilos para el menú */
-  #filterMenu {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 999; /* Para asegurar que esté encima del botón */
-    background-color: rgba(255, 255, 255, 0.5); /* Fondo transparente con 50% de opacidad */
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    display: none; /* Ocultamos inicialmente el menú */
-  }
+/* Estilos para el menú */
+#filterMenu {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  background-color: rgba(122, 116, 116, 0.397);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 100% 100%;
+}
 
-  /* Estilos adicionales para el menú */
-  #filterMenu input,
-  #filterMenu button {
-    margin-bottom: 10px;
-    width: 100%;
-  }
 
+/* Estilos para los elementos dentro del menú */
+#filterMenu input,
+#filterMenu button {
+    margin: 5px;
+}
+#filterMenu input{
+  width: 192px;
+}
   /* Estilos para el botón de aplicar filtro */
   #applyFilterBtn {
     background-color: #0530a8;
@@ -356,9 +357,9 @@ body{
     border-radius: 5px;
     padding: 10px;
     cursor: pointer;
+    width: 200px;
   }
 
-  /* Estilos para el botón de resetear filtro */
   #resetFilterBtn {
     background-color: #dc3545;
     color: white;
@@ -367,4 +368,9 @@ body{
     padding: 10px;
     cursor: pointer;
     display: none; /* Ocultar inicialmente el botón de reset */
+    width: 200px;
+  }
+  #contenedorFiltros{
+    padding:30px 30px;
+    background-color: rgba(143, 135, 135, 0.432);
   }
